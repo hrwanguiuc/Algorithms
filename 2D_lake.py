@@ -37,7 +37,7 @@ def solution(h, d):
             area = height*width - area_to_delete
             MAX = max(MAX, area)
     # special case 
-    if MAX == 0 and stack:
+    if stack:
         for i in xrange(L-1):
         # for(int i=0;i<L-1,i++)
             temp = min(h[i],h[i+1])*d[i]
